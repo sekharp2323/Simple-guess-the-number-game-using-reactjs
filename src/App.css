@@ -1,38 +1,51 @@
-.App {
+.app{
+  display: flex;
+  flex-direction: column;
+  background-color: #dce8ef;
+  background-image: linear-gradient(160deg, #aed6ee 0%, #80D0C7 100%);  
+  padding: 10px;
+  height: 100vh;
+}
+.head{
+  padding: 20px;
   text-align: center;
+  color: rgb(12, 129, 162);
+  font-weight: bold;
+  font-family: Comic Sans MS;
+  background-image: linear-gradient( 184.1deg,  rgba(249,255,182,1) 44.7%, rgba(226,255,172,1) 67.2% );
+  border-radius: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 50px;
+  border: 3px solid transparent;
+  background-image: linear-gradient(to top, #5985a0 0%, #467f9e 100%);
+  padding: 20px;
+  border-radius: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.body button{
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.body input{
+  border-radius: 5px;
+  height: 30px;
+}
+input[type="number"] {
+  border: none;
+}
+input:focus{
+  outline: none;
+  box-shadow: none;
 }
